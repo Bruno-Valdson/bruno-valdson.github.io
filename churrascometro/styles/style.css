@@ -380,7 +380,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
     .imgTop {
         background-repeat: no-repeat;
         background-size: cover;
@@ -427,22 +427,30 @@ footer {
     }
 
     #acomp-suprim {
-        display: block;
-        margin-left: 40px;
+        display: inline-block;
         text-align: left;
     }
     input[type="checkbox"]{
-        height: 30px;
-        width: 30px;
-        margin: 5px;
+        height: 25px;
+        width: 25px;
+        margin: auto;
+    }
+    label{
+        padding: 20px;
     }
 
     .tp-bebidas {
-        margin: auto;
+        margin: 40px auto;
     }
 
     .qtdAdultos, .qtdCrianca, .qtdTemp {
         margin: auto;
+        padding: 0 150px;
+    }
+
+    .label-vinagrete{
+        width: 100%;
+        text-align: center;
     }
 
     .resulDescription {
