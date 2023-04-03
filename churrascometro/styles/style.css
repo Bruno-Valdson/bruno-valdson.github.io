@@ -300,7 +300,6 @@ footer {
 /* Responsividade Media Create */
 @media screen and (max-width: 950px) {
     body {
-        /* margin: 0 50px; */
         width: 100%;
     }
 
@@ -381,7 +380,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
     .imgTop {
         background-repeat: no-repeat;
         background-size: cover;
@@ -392,6 +391,74 @@ footer {
 
     header {
         height: 50%;
+    }
+    .content {
+        display: block;
+    }
+
+    .column-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .qtd {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .column-2 {
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .resultado {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .re {
+        padding-left: 5px;
+    }
+
+    #acomp-suprim {
+        display: block;
+        margin-left: 40px;
+        text-align: left;
+    }
+    input[type="checkbox"]{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+
+    .tp-bebidas {
+        margin: auto;
+    }
+
+    .qtdAdultos, .qtdCrianca, .qtdTemp {
+        margin: auto;
+    }
+
+    .resulDescription {
+        margin: auto;
+    }
+
+    .resulMediaCreate {
+        margin: auto;
+    }
+
+    .qtd-re {
+        font-size: 1rem;
+    }
+
+    .title-resul {
+        font-size: 2rem;
     }
 }
 
@@ -418,7 +485,7 @@ footer {
 
     .qtd {
         display: block;
-        margin: 30px auto;
+        margin: 30px 30px;
     }
 
     .column-2 {
