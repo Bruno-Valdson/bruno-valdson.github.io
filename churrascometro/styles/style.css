@@ -392,6 +392,7 @@ footer {
     header {
         height: 50%;
     }
+
     .content {
         display: block;
     }
@@ -430,12 +431,14 @@ footer {
         display: inline-block;
         text-align: left;
     }
-    input[type="checkbox"]{
+
+    input[type="checkbox"] {
         height: 25px;
         width: 25px;
         margin: auto;
     }
-    label{
+
+    label {
         padding: 20px;
     }
 
@@ -448,7 +451,7 @@ footer {
         padding: 0 150px;
     }
 
-    .label-vinagrete{
+    .label-vinagrete {
         width: 100%;
         text-align: center;
     }
@@ -516,7 +519,8 @@ footer {
         margin-left: 40px;
         text-align: left;
     }
-    input[type="checkbox"]{
+
+    input[type="checkbox"] {
         height: 30px;
         width: 30px;
         margin: 5px;
