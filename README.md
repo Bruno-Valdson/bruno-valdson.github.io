@@ -1,3 +1,3 @@
-# bruno-valdson.github.io
-GitHub.io
-Projeto Churrascômetro
+# Bruno Valdson
+
+Projeto Churrascômetro - bruno-valdson.github.io/churrascometro/
