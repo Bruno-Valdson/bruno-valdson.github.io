@@ -1,0 +1,473 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    background: #fff;
+    border-top: 8px solid #ce1818;
+    margin: 0 auto;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+header {
+    display: block;
+    margin: auto;
+    height: 400px;
+    text-align: center;
+}
+
+.menu {
+    width: 2000px;
+    max-width: 100%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.imgTop {
+    height: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    margin-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 900px;
+    margin: auto;
+    height: 80%;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.column-1 {
+    width: 70%;
+}
+
+.title {
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 1.47;
+    color: #ce1818;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: #202020;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.description p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #202020;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.qtd {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.qtdAdultos, .qtdCrianca, .qtdTemp {
+    padding-right: 20px;
+    display: flex;
+    height: 120px;
+}
+
+.tp-bebidas {
+    cursor: pointer;
+    margin-right: 50px;
+    width: 150px;
+}
+
+.bebidas {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+/* -- Icones de convidados -- */
+.icons {
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 80px;
+    background-size: 90px;
+    margin: auto;
+}
+
+.icon-adulto {
+    background-image: url(../img/convidados.png);
+}
+
+.icon-criancas {
+    background-image: url(../img/crianças.png);
+}
+
+.icon-duracao {
+    background-image: url(../img/temp.png);
+}
+
+/* -- Icones bebidas -- */
+.bb-icons {
+    height: 64px;
+    width: 64px;
+    margin: 5px auto;
+}
+
+.icon-cerveja {
+    background-image: url(../img/cerveja-garrafa.png);
+}
+
+.icon-cerveja-lata {
+    background-image: url(../img/lata-de-cerveja.png);
+}
+
+.icon-refrigerante {
+    background-image: url(../img/refrigerantes.png);
+}
+
+/* -- DIV butões -- */
+.qtdNum {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ce1818;
+    font-weight: 600;
+}
+
+.btn {
+    margin: auto;
+    color: #202020;
+    display: flex;
+    margin: auto;
+    width: 50px;
+    padding: 0;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btnIcons {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    border: 0 none;
+    outline: 0;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+/* Lista - Acompanhamentos - Suprimentos */
+#acomp-suprim {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 450;
+    /* position: relative; */
+}
+
+input[type="checkbox"] {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    border-style: outset;
+}
+
+input[type="checkbox"]:checked {
+    -webkit-appearance: none;
+    background-color: #ce1818;
+    border-radius: 4px;
+    border-style: outset;
+}
+
+input[type="checkbox"]:hover {
+    -webkit-appearance: none;
+    background-color: #ce1818;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    border-radius: 4px;
+    border-style: outset;
+
+}
+
+label {
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+/* -- Resultado -- */
+.column-2 {
+    background-color: #adadad;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    width: 30%;
+    margin: auto;
+    font-size: 15px;
+}
+
+.title-resul {
+    text-align: center;
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 1.47;
+    margin-bottom: 20px;
+}
+
+.re {
+    padding-left: 30px;
+}
+
+.re h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #000000;
+    font-weight: 700;
+}
+
+hr {
+    margin-right: 35px;
+}
+
+.list {
+    display: flex;
+}
+
+.desc {
+    width: 65%;
+    text-align: left;
+}
+
+.qtd-re {
+    font-weight: 700;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.25rem;
+}
+
+/* -- Hover -- */
+.btnIcons:hover {
+    background-color: #ce1818;
+    color: white;
+}
+
+.tp-bebidas:hover {
+    background-color: #ce1818;
+    color: white;
+    border-radius: 20px;
+}
+
+#tp-cerveja:hover {
+    background-color: #ce1818;
+    border-radius: 25px;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    background-color: #ce1818;
+    margin-top: 35px;
+    border-bottom: 41px solid #ce1818;
+}
+
+
+/* Responsividade Media Create */
+@media screen and (max-width: 950px) {
+    body {
+        /* margin: 0 50px; */
+        width: 100%;
+    }
+
+    .imgTop {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .column-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .qtd {
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    .column-2 {
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .resultado {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .re {
+        padding-left: 5px;
+    }
+
+    .suprimentos, .acompanhamentos {
+        margin: auto;
+    }
+
+    .tp-bebidas {
+        margin: auto;
+    }
+
+    .qtdAdultos, .qtdCrianca, .qtdTemp {
+        margin: auto;
+    }
+
+    .resulDescription {
+        margin: auto;
+    }
+
+    .resulMediaCreate {
+        margin: auto;
+    }
+
+    .qtd-re {
+        font-size: 1em;
+    }
+
+    .title-resul {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .imgTop {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .imgTop {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 50%;
+        margin: auto;
+    }
+
+    header {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .imgTop {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .column-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .qtd {
+        display: block;
+        margin: 30px auto;
+    }
+
+    .column-2 {
+        width: 100%;
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .resultado {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .re {
+        padding-left: 5px;
+    }
+
+    #acomp-suprim {
+        display: block;
+        margin-left: 40px;
+        text-align: left;
+    }
+    input[type="checkbox"]{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+
+    .tp-bebidas {
+        margin: auto;
+    }
+
+    .qtdAdultos, .qtdCrianca, .qtdTemp {
+        margin: auto;
+    }
+
+    .resulDescription {
+        margin: auto;
+    }
+
+    .resulMediaCreate {
+        margin: auto;
+    }
+
+    .qtd-re {
+        font-size: 1rem;
+    }
+
+    .title-resul {
+        font-size: 2rem;
+    }
+}

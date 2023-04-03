@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body id="site">
+    <header class="menu">
+        <div>
+            <img class="imgTop" src="./img/img-churrasco.png" alt="churrascômetro">
+        </div>
+    </header>
+    <div class="container">
+        <div class="title-description">
+            <div>
+                <h3 class="title">Churrasco de verdade só com produtos de primeira!</h3>
+            </div>
+            <div class="description">
+                <p>Indique quantos convidados entre adultos e crianças
+                    estarão presentes no seu churrasco que o churrascômetro
+                    te dará a quantidade certa que você deve comprar
+                    para que a sua festa seja um sucesso.</p>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Quantidades -->
+            <div class="column-1">
+                <!-- Quanditade de convidados -->
+                <div class="title-description">
+                    <h4 class="title">Convidados</h4>
+                    <h6 class="subtitle">Defina a quantidade de pessoas do seu churrasco</h6>
+                </div>
+                <div id="qtdConvidados" class="qtd">
+                    <div id="qtdAdultos" class="qtdAdultos">
+                        <div class="icons icon-adulto"></div>
+                        <div id="adultos">
+                            <p id="qtdAdulto" class="qtdNum">0</p>
+                            <div class="btn">
+                                <input type="button" id="btnPlus-adulto" class="btnIcons" value="+">
+                                <input type="button" id="btnSub-adulto" class="btnIcons" value="-">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="qtdCriancas" class="qtdCrianca">
+                        <div class="icons icon-criancas"></div>
+                        <div id="criancas">
+                            <p id="qtdCrianca" class="qtdNum">0</p>
+                            <div class="btn">
+                                <input type="button" id="btnPlus-crianca" class="btnIcons" value="+">
+                                <input type="button" id="btnSub-crianca" class="btnIcons" value="-">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qtdTemp">
+                        <div class="icons icon-duracao"></div>
+                        <div id="duracao">
+                            <p id="qtdDuracao" class="qtdNum">0</p>
+                            <div class="btn">
+                                <input type="button" id="btnPlus-duracao" class="btnIcons" value="+">
+                                <input type="button" id="btnSub-duracao" class="btnIcons" value="-">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bebidas para o churrasco -->
+                <div class="title-description">
+                    <h4 class="title">Bebidas</h4>
+                    <h6 class="subtitle">Defina as bebidas que serão consumidas no seu churrasco</h6>
+                </div>
+                <div id="qtdBebidas" class="qtd">
+                    <div id="tp-cerveja" class="tp-bebidas">
+                        <div id="icon-cerveja" class="bb-icons icon-cerveja"></div>
+                        <div id="bb-cerveja">
+                            <p id="cerveja" class="bebidas cerveja">Cerveja (600ml)</p>
+                        </div>
+                    </div>
+                    <div id="tp-cerveja-lata" class="tp-bebidas">
+                        <div id="icon-cerveja-lata" class="bb-icons icon-cerveja-lata"></div>
+                        <div id="bb-cerveja">
+                            <p id="cerveja-lata" class="bebidas cerveja-lata">Cerveja lata</p>
+                        </div>
+                    </div>
+                    <div id="tp-refrigerante" class="tp-bebidas">
+                        <div id="icon-refrigerante" class="bb-icons icon-refrigerante"></div>
+                        <div id="bb-cerveja">
+                            <p id="refrigerante" class="bebidas refrigerante">Refrigerantes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Acompanhamentos -->
+                <div class="title-description">
+                    <h4 class="title">Acompanhamentos</h4>
+                    <h6 class="subtitle">Acompanhamentos para o seu seu churrasco</h6>
+                </div>
+                <div id="qtd-acompanhamentos" class="qtd">
+                    <div id="acomp-suprim" class="acompanhamentos">
+                        <input type="checkbox" id="check-vinagrete" name="check" value="VINAGRETE">
+                        <label id="label-vinagrete" clasfor="description">VINAGRETE</label><br>
+                        <input type="checkbox" id="check-paoAlho" name="check" value="PAO DE ALHO">
+                        <label id="label-paoAlho" for="description">PÃO DE ALHO</label><br>
+                        <input type="checkbox" id="check-farofa" name="check" value="FAROFA PRONTA">
+                        <label id="label-farofa" for="description">FAROFA PRONTA</label><br><br>
+                    </div>
+                </div>
+                <!-- Suprimentos -->
+                <div class="title-description">
+                    <h4 class="title">Suprimentos</h4>
+                    <h6 class="subtitle">Suprimentos para o seu churrasco</h6>
+                </div>
+                <div id="qtd-suprimentos" class="qtd">
+                    <div id="acomp-suprim" class="suprimentos">
+                        <input type="checkbox" id="check-carvao" name="check" value="CARVÃO">
+                        <label id="label-carvao" class="checkmark" for="description">CARVÃO</label><br>
+                        <input type="checkbox" id="check-copos" name="check" value="COPOS">
+                        <label id="label-copos" class="checkmark" for="description">COPOS</label><br>
+                        <input type="checkbox" id="check-pratos" name="check" value="PRATOS">
+                        <label id="label-pratos" class="checkmark" for="description">PRATOS</label><br><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Resultados -->
+            <div id="column-2" class="column-2">
+                <div>
+                    <h1 class="title-resul">Resultado</h1>
+                </div>
+                <div id="resultado" class="resultado">
+                    <div class="re">
+                        <div class="resulDescription">
+                            <h4>Convidados</h4>
+                            <hr>
+                            <div class="list convidados">
+                                <div class="desc conv-description">
+                                    <p>Adultos</p>
+                                    <p>Crianças</p>
+                                </div>
+                                <div id="conv-qtd" class="qtd-re conv-qtd">
+                                    <p>-</p>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                            <!-- Carnes -->
+                            <h4>Carnes</h4>
+                            <hr>
+                            <div class="list carnes">
+                                <div class="desc carnes-description">
+                                    <p>Carne bovina</p>
+                                    <p>Linguiça</p>
+                                </div>
+                                <div id="qtd-carnes" class="qtd-re qtd-carnes">
+                                    <p>-</p>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                            <!-- Acompanhamentos -->
+                            <h4>Acompanhamentos</h4>
+                            <hr>
+                            <div class="list acompanhamentos">
+                                <div class="desc acompanhamentos-description">
+                                    <p>Vinagrete</p>
+                                    <p>Arroz</p>
+                                    <p>Farofa pronta</p>
+                                </div>
+                                <div id="qtd-acompanhamentos" class="qtd-re qtd-acompanhamentos">
+                                    <p id="resulVina">-</p>
+                                    <p id="resulPaoAlho">-</p>
+                                    <p id="resulFarrofa">-</p>
+                                </div>
+                            </div>
+                            <!-- Suprimentos -->
+                            <h4>Suprimentos</h4>
+                            <hr>
+                            <div class="list suprimentos">
+                                <div class="desc suprimentos-description">
+                                    <p>Carvão</p>
+                                    <p>Copos</p>
+                                    <p>Pratos</p>
+                                </div>
+                                <div id="qtd-suprimentos" class="qtd-re qtd-suprimentos">
+                                    <p id="resulCarvao">-</p>
+                                    <p id="resulCopos">-</p>
+                                    <p id="resulPratos">-</p>
+                                </div>
+                            </div>
+                            <!-- Bebidas -->
+                            <h4>Bebidas</h4>
+                            <hr>
+                            <div class="list bebidas">
+                                <div class="desc bebidas-description">
+                                    <p>Cerveja (600ml)</p>
+                                    <p>Cerveja Lata</p>
+                                    <p>Refrigerante 2L</p>
+                                </div>
+                                <div id="qtd-bebidas"  class="qtd-re qtd-bebidas">
+                                    <p id="resulCer">-</p>
+                                    <p id="resulCerLata">-</p>
+                                    <p id="resulRefri">-</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+
+</html>
