@@ -33,6 +33,10 @@ window.onload = function () {
     var clickCervejaLata;
     var clickRefri;
 
+    var cerveja = document.getElementById("resulCer");
+    var cervejaLata = document.getElementById("resulCerLata");
+    var refri = document.getElementById("resulRefri");
+
     // funcão clicar qtd convidados
     el.addEventListener('click', function (e) {
         var element = e.target.id;
@@ -83,15 +87,22 @@ window.onload = function () {
         // Quantidade de carnes
         resCarnes.innerHTML = `<p>${qtdTotalCarne / 1000} Kg</p>`
         resCarnes.innerHTML += `<p>${(qtdTotalCarne / 1000) / 2} Kg</p>`
+
+        if (cerveja.innerText != "-") {
+            resultadoBebidas(clickCerveja, "cerveja");
+        }
+        if(cervejaLata.innerText != "-"){
+            resultadoBebidas(clickCervejaLata, "cervejaLata");
+        }
+        if(refri.innerText != "-"){
+            resultadoBebidas(clickRefri, "refrigerante");
+        }
+
     });
 
     // Selecionar em Bebidas
     el2.addEventListener('click', function (e) {
         var ident = e.target.id;
-
-        let cerveja = document.getElementById("resulCer");
-        let cervejaLata = document.getElementById("resulCerLata");
-        let refri = document.getElementById("resulRefri");
 
         switch (ident) {
             case "tp-cerveja":
@@ -239,7 +250,7 @@ window.onload = function () {
         let resCerveLata = document.getElementById("resulCerLata");
         let resRefri = document.getElementById("resulRefri");
 
-        let qtdTotalCerveja = cerveja(qtdDuracao) * qtdAdultos;
+        let qtdTotalCerveja = cervejaGarrafa(qtdDuracao) * qtdAdultos;
         let qtdTotalCervejaLata = lataCerveja(qtdDuracao) * qtdAdultos;
         let qtdRefri = bebidasPP(qtdDuracao) * qtdAdultos + (bebidasPP(qtdDuracao) / 2 * qtdCrianca);
 
@@ -304,7 +315,7 @@ window.onload = function () {
         let resulCopos = document.getElementById("resulCopos");
         let resulPratos = document.getElementById("resulPratos");
 
-        let qtdCarvao = (qtdTotalCarne/1000) * 1.5;
+        let qtdCarvao = (qtdTotalCarne / 1000) * 1.5;
         let qtdCopos = (qtdAdultos + qtdCrianca) * 3;
         let qtdPratos = (qtdAdultos + qtdCrianca) * 2;
 
@@ -340,7 +351,7 @@ window.onload = function () {
         }
     }
 
-    function cerveja(qtdDuracao) {
+    function cervejaGarrafa(qtdDuracao) {
         if (qtdDuracao > 4) {
             return 5500;
         } else {
