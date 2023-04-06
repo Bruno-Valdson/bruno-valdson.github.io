@@ -407,6 +407,15 @@ footer {
         font-size: 1.25rem;
     }
 
+    .qtdAdultos, .qtdCrianca, .qtdTemp {
+        margin: auto;
+        padding: 0;
+    }
+
+    .icons {
+        margin: auto 10px auto 25%;
+    }
+
     .qtd {
         display: block;
         margin: 30px auto;
@@ -446,11 +455,6 @@ footer {
         margin: 40px auto;
     }
 
-    .qtdAdultos, .qtdCrianca, .qtdTemp {
-        margin: auto;
-        padding: 0 150px;
-    }
-
     .label-vinagrete {
         width: 100%;
         text-align: center;
@@ -473,80 +477,31 @@ footer {
     }
 }
 
-@media screen and (max-width: 450px) {
-    .imgTop {
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: auto;
+@media screen and (max-width: 300px) {
+    .icons {
+        margin: auto 10px auto auto;
     }
 
-    .content {
-        display: block;
-    }
-
-    .column-1 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .subtitle {
-        text-align: center;
+    .title {
         font-size: 1.25rem;
     }
 
-    .qtd {
-        display: block;
-        margin: 30px 30px;
+    .subtitle, label {
+        font-size: 0.75rem;
     }
-
-    .column-2 {
-        width: 100%;
-        line-height: 1.5rem;
-        font-size: 1rem;
-    }
-
-    .resultado {
-        margin: 25px;
-        padding: 25px;
-    }
-
-    .re {
-        padding-left: 5px;
-    }
-
-    #acomp-suprim {
-        display: block;
-        margin-left: 40px;
-        text-align: left;
-    }
-
-    input[type="checkbox"] {
-        height: 30px;
-        width: 30px;
-        margin: 5px;
-    }
-
-    .tp-bebidas {
+    
+    .title-resul{
+        font-size: 1.25rem;
         margin: auto;
     }
-
-    .qtdAdultos, .qtdCrianca, .qtdTemp {
+    .resultado{
+        font-size: 0.75rem;
         margin: auto;
+        padding: 5px;
     }
-
-    .resulDescription {
-        margin: auto;
-    }
-
-    .resulMediaCreate {
-        margin: auto;
-    }
-
-    .qtd-re {
-        font-size: 1rem;
-    }
-
-    .title-resul {
-        font-size: 2rem;
+    .qtd-re{
+        font-size: 0.75rem;
+        text-align: center;
+        width: 50px;
     }
 }
