@@ -22,16 +22,11 @@ window.onload = function () {
     var resConvidados = document.getElementById("conv-qtd");
     var resCarnes = document.getElementById("qtd-carnes");
 
-
     var qtdTotalCarne;
     var qtdCrianca = parseInt(document.getElementById("qtdCrianca").innerText);
     var qtdAdultos = parseInt(document.getElementById("qtdAdulto").innerText);
     var criancas = document.getElementById("qtdCrianca");
     var adulto = document.getElementById("qtdAdulto");
-
-    var clickCerveja;
-    var clickCervejaLata;
-    var clickRefri;
 
     var cerveja = document.getElementById("resulCer");
     var cervejaLata = document.getElementById("resulCerLata");
@@ -88,16 +83,38 @@ window.onload = function () {
         resCarnes.innerHTML = `<p>${qtdTotalCarne / 1000} Kg</p>`
         resCarnes.innerHTML += `<p>${(qtdTotalCarne / 1000) / 2} Kg</p>`
 
+        //Quantidade bebidas
         if (cerveja.innerText != "-") {
             resultadoBebidas(clickCerveja, "cerveja");
         }
-        if(cervejaLata.innerText != "-"){
+        if (cervejaLata.innerText != "-") {
             resultadoBebidas(clickCervejaLata, "cervejaLata");
         }
-        if(refri.innerText != "-"){
+        if (refri.innerText != "-") {
             resultadoBebidas(clickRefri, "refrigerante");
         }
 
+        //Quantidade de Acompanhamentos
+        if (cerveja.innerText != "-") {
+            resulAcompanhamentos(clickVinagrete, "vinagrete");
+        }
+        if (cervejaLata.innerText != "-") {
+            resulAcompanhamentos(clickPaoAlho, "paoAlho");
+        }
+        if (refri.innerText != "-") {
+            resulAcompanhamentos(clickFarofa, "farofa");
+        }
+
+        //Quantidade de Suprimentos
+        if (cerveja.innerText != "-") {
+            resulSuprimentos(clickCarvao, "carvao");
+        }
+        if (cervejaLata.innerText != "-") {
+            resulSuprimentos(clickCopos, "copos");
+        }
+        if (refri.innerText != "-") {
+            resulSuprimentos(clickPratos, "pratos");
+        }
     });
 
     // Selecionar em Bebidas
