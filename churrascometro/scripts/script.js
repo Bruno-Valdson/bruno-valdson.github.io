@@ -22,11 +22,11 @@ window.onload = function () {
     var resConvidados = document.getElementById("conv-qtd");
     var resCarnes = document.getElementById("qtd-carnes");
 
-    var qtdTotalCarne;
     var qtdCrianca = parseInt(document.getElementById("qtdCrianca").innerText);
     var qtdAdultos = parseInt(document.getElementById("qtdAdulto").innerText);
     var criancas = document.getElementById("qtdCrianca");
     var adulto = document.getElementById("qtdAdulto");
+    var qtdTotalCarne;
 
     var cerveja = document.getElementById("resulCer");
     var cervejaLata = document.getElementById("resulCerLata");
@@ -397,9 +397,9 @@ window.onload = function () {
 
 // mudar cor background
 
-// const cor1 = "#ce1818";
-// const cor2 = "#ffffff";
-// let cor3 = document.getElementById("tp-cerveja").style.backgroundColor;
+const cor1 = "#ce1818";
+const cor2 = "#ffffff";
+let cor3 = document.getElementById("tp-cerveja").style.backgroundColor;
 
                 // if (cor3 == "rgb(255, 255, 255)") {
                 //     document.getElementById("tp-cerveja").style.backgroundColor = cor1;
