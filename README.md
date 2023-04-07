@@ -1,5 +1,3 @@
-# Bruno Valdson
-
 # Projetos do Curso de Desenvolvimento Web - Do zero ao primeiro projeto
 
 
